@@ -1,0 +1,142 @@
+.secciones.estrategias{
+    margin-right: 270px;
+    margin-left: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    div{
+        border: 1px solid #262323;
+        border-radius: 5px;
+        width: 500px;
+        margin-bottom: 30px;
+        .nombre{
+            display: flex;
+            padding-left: 20px;
+            margin-bottom: 10px;
+            img{
+                width: 50px;
+                margin-right: 20px;
+            }
+            h5{
+                font-family: 'Open Sans';
+                font-size: 30px;
+                margin-top: 25px;
+                margin-bottom: 30px;
+            }
+        }
+        p{
+            font-family: 'Open sans';
+            font-size: 16px;
+            padding: 0 20px 10px 20px;
+        }
+        ul{
+            li{
+                font-family: 'Open sans';
+                font-weight: 600;
+                list-style: none;
+                font-size: 16px;
+                padding: 0 20px 0px 20px;
+            }
+        }
+    }
+
+    div.redes{
+        width: 100%;
+    }
+
+    div:hover{
+        background: #68a6ec;
+        // transition: .3s ease;
+    }
+    div:hover{
+        color: #fff;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .secciones.estrategias{
+        margin-right: 100px;
+        margin-left: 100px;
+    }    
+}
+
+@media screen and (max-width: 1800px) {
+    .secciones.estrategias{
+        margin-right: 100px;
+        margin-left: 100px;
+    }    
+}
+
+@media screen and (max-width: 1450px) {
+    .secciones.estrategias{
+        margin-right: 100px;
+        margin-left: 100px;
+        div{
+            width: 500px;
+        }
+    }    
+}
+
+@media screen and (max-width:1250px){
+    .secciones.estrategias{
+        margin-left: 0;
+        margin-right: 0;
+        .redes{
+            margin-right: 50px;
+            margin-left: 50px;
+        }
+    }
+}
+
+@media screen and(max-width:1000px) {
+    .secciones.estrategias{
+        div{
+            width: 600px;
+        }
+        div.redes{
+            width: 600px;
+        }
+    }
+}
+
+
+@media screen and(max-width:800px) {
+    .secciones.estrategias{
+        div,
+        div.redes{
+            width:500px;
+        }
+    }
+    .imagen{
+        img{
+            width: 500px;
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+    .secciones.estrategias{
+        .redes{
+            margin-right: 0;
+            margin-left: 0;
+        }
+    }
+    .imagen{
+        img{
+            width: 300px;
+        }
+    }
+
+    .secciones.estrategias{
+        margin-right: 20px;
+        margin-left: 20px;
+        div{
+            h5{
+                font-size: 25px;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+    }
+}

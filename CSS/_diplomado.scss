@@ -1,0 +1,66 @@
+.secciones.diplomado{
+    margin-left: 250px;
+    margin-right: 270px;
+    h5{
+        font-family: 'Poppins';
+        font-weight: normal;
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+    p{
+        font-family: 'Poppins';
+        font-size: 16px; 
+        color: #6F6C6C;
+        margin-bottom: 0;
+    }
+    div{
+        margin-bottom: 40px;
+        .check{
+            display: flex;
+            margin-bottom: 15px;
+            i{
+                font-size: 20px;
+                color: #4CAF50;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .dinamica{
+        margin-bottom: 50px;
+    }
+
+    .modulo3{
+        .contenido{
+            margin-bottom: 15px;
+        }
+    }
+}
+
+@media screen and(max-width: 1700px) {
+    .secciones.diplomado{
+        margin-right: 100px;
+        margin-left: 100px;
+    }
+}
+
+@media screen and(max-width: 1200px) {
+    .secciones.diplomado{
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .secciones.diplomado{
+        margin-right: 25px;
+        margin-left: 25px;
+        div{
+            .check{
+                i{
+                    padding-top: 3px;
+                }
+            }
+        }
+    }
+}

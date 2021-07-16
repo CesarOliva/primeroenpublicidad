@@ -1,0 +1,274 @@
+.presentacion{
+    background: #121212;
+    height: 980px;
+    .izquierda{
+        margin: auto;
+
+        .textos{
+            h2{
+                color: #fff;
+                font-family: 'Poppins';
+                font-weight: 700;
+                font-size: 48px;
+                margin-left: 120px;
+            }
+
+            h1{
+                color: #000;
+                font-family: 'Poppins';
+                font-weight: 600;
+                font-size: 48px;
+                background: #FCED65;
+                display: inline-block;
+                width: 500px;
+                padding: 5px 0px 5px 20px;
+                margin-top: 10px;
+                margin-left: 120px;
+            }
+        }
+
+        .especialidades{
+            margin-top: 50px;
+            h3{
+               font-family: 'Poppins';
+               font-weight: normal;
+               font-size: 20px;
+               color: #fff;
+               text-align: center;
+               margin-bottom: 30px;
+            }
+            section{
+                display: flex;
+                flex-wrap: wrap;
+                text-align: center;
+                justify-content: center;
+                div{
+                    color: #fff;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin: 20px;
+                    margin-bottom: 10px;
+                    i{
+                        font-size: 50px;
+                    }
+                    p{
+                        font-family: 'Poppins';
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .derecha{
+        display: flex;
+        justify-content: flex-end;
+        img{
+            width: 600px;
+            margin-right: 20px;
+        }
+    }
+}
+
+.servicios{
+    .izquierda{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .servicios{
+        margin-left: 250px;
+        margin-right: 80px;
+            .titulo{
+                margin-bottom: 20px;
+                h3{
+                    font-family: 'Poppins';
+                    font-weight: 600;
+                    font-size: 48px;
+                }
+                p{
+                    font-family: 'Open Sans';
+                    font-size: 18px;
+                    color: #666666;
+                }
+            }
+            .lista{
+                section{
+                    display: flex;
+                    .contenedor{
+                        display: flex;
+                        justify-content: center;
+                        margin-bottom: 20px;
+                        img{
+                            width: 50px;
+                            margin-right: 20px;
+                        }
+                        h4{
+                            font-family: 'Poppins';
+                            font-weight: 700;
+                            font-size: 22px;
+                            color: #333333;
+                        }
+                        p{
+                            font-family: 'Open Sans';
+                            font-size: 16px;
+                            color: #4f4f4f;
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .derecha{
+        display: flex;
+        justify-content: center;
+        .imagenes{
+            margin: 100px 50px 100px 0px;
+        }
+    }
+}
+
+.proyectos{
+    background: #E8F2F6;
+
+    h3{
+        padding-top: 50px;
+        text-align: center;
+        font-family: 'Poppins';
+        font-size: 40px;
+        font-weight: 600;
+    }
+    
+    .trabajos{
+        display: flex;
+        padding-bottom: 80px;
+
+        .row{
+            justify-content: center;
+        }
+        
+        .contenedor{
+            margin: 30px;
+            text-align: center;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            height: 280px;
+            max-width: 280px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+
+            img{
+                margin-top: 5px;
+                max-width: 280px;
+                padding-right: 5px;
+                padding-left: 5px;
+                cursor: pointer;
+            }
+
+            .descripcion{
+                background: #fff;
+                border-radius: 0 0 5px 5px;
+                    h5{
+                        padding-top: 10px;
+                        font-family: 'Poppins';
+                        font-weight: 700;
+                        font-size: 20px;        
+                    }
+                    p{
+                        font-family: 'Open sans';
+                        font-size: 13px;
+                        font-weight: normal;
+                        margin-bottom: 0;
+                        padding-bottom: 1px;
+                    }
+            }
+        }
+
+        .contenedor.trabajo1{
+            img{
+                padding-right: 15px;
+                padding-left: 15px ;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1440px) {
+    .presentacion{
+        .izquierda{
+            .textos{
+                h2,
+                h1{
+                    margin-left: 70px;
+                }
+            }
+        }
+    }
+    .servicios{
+        .izquierda{
+            .servicios{
+                margin-left: 150px;
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 1200px){
+    .presentacion{
+        flex-wrap: wrap;
+        height: auto;
+        display: flex;
+
+        // .izquierda{
+        //     .especialidades{
+        //         section{
+        //             div{
+        //                 margin: 18px;
+        //             }
+        //         }
+        //     }
+        // }
+
+        
+        .izquierda.col-md-6{
+            max-width: 100%;
+        }
+        .derecha.col-md-6{
+            max-width: 100%;
+            flex: 0 0 100%;
+        }
+        
+        .derecha{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 500px;
+            }
+        }
+    }
+
+    .servicios{
+        display: flex;
+        flex-direction: column;
+
+        .izquierda{
+            .servicios{
+                .titulo{
+                    margin-top: 50px;
+                }
+            }
+        }
+
+        .izquierda.col-md-6{
+            max-width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .derecha.col-md-6{
+            max-width: 100%;
+        }
+    }
+}

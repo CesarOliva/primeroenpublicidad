@@ -1,0 +1,263 @@
+.imagen{
+    display: flex;
+    justify-content: center;
+    img{
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+}
+
+.secciones.paginas{
+    margin-right: 270px;
+    margin-left: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    div{
+        border: 1px solid #262323;
+        border-radius: 5px;
+        width: 600px;
+        margin-bottom: 30px;
+        margin-right: 15px;
+        margin-left: 15px;
+        h2{
+            font-family: 'Open Sans';
+            font-size: 30px;
+            margin-top: 25px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        p{
+            font-family: 'Open sans';
+            font-size: 16px;
+            padding: 0 20px 25px 20px;
+        }
+    }
+
+    div:hover{
+        background: #68a6ec;
+        transition: .3s ease;
+    }
+    div:hover{
+        color: #fff;
+    }
+}
+
+.paginas-estaticas,
+.paginas-wpp{
+    background: url(../Imagenes/Paginas-web/precios-bg.jpg);
+    h3{
+        text-align: center;
+        color: #fff;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        font-family: 'Open Sans';
+        font-size: 32px;
+        font-weight: 300;
+    }
+
+    .planes{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+        .contenedor{
+            padding: 0px 20px 0px 20px;
+            border-radius: 5px;
+            background: #fff;
+            margin-left: 25px;
+            margin-right: 25px;
+            text-align: center;
+            width: 380px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .plan{
+                h4{
+                    font-family: 'Open Sans';
+                    font-size: 32px;
+                    font-weight: 300;
+                    margin-bottom: 20px;
+                    margin-top: 40px;
+                }
+                p{
+                    margin-bottom: 0;
+                    font-family: 'Open Sans';
+                    font-size: 32px;
+                    font-weight: 300;
+                    margin-bottom: 30px;
+                }
+            }
+            ul{
+                li{
+                    list-style: none;
+                    font-family: 'Open Sans';
+                    font-size: 18px;
+                    font-weight: 300;
+                    border-bottom: 1px solid #2A2C2D;
+                    margin-bottom: 20px;
+                }
+            }
+
+            .contratar{
+                width: 180px;
+                height: 50px;
+                background: #fff;
+                border: 1px solid #4C8DCE;
+                border-radius: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 20px;
+                a{
+                    font-family: 'Open Sans';
+                    font-size: 18px;
+                    font-weight: 300;
+                    margin-bottom: 0;
+                    color: #000;
+                }
+            }
+
+            .contratar:hover{
+                background: #4C8DCE;
+                border: 1px solid #fff;
+                border-radius: 5px;
+                a{
+                    color: #fff;
+                }
+                a:hover{
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .contenedor.estandar{
+            background: #4C8DCE;
+            color: #fff;
+
+            ul{
+                li{
+                    border-bottom: 1px solid #fff;
+                }
+            }
+
+            .contratar{
+                background: #4C8DCE;
+                border: 1px solid #fff;
+                border-radius: 5px;
+                a{
+                    color: #fff;
+                }
+            }
+
+            .contratar:hover{
+                background: #fff;
+                border: 1px solid #4C8DCE;
+                border-radius: 5px;
+                a{
+                    color: #000;
+                }                
+            }
+        }
+    }
+}
+
+.paginas-wpp{
+    background: #fff;
+    h3{
+        color: #000;
+    }
+
+    .planes{
+        .contenedor.basico,
+        .contenedor.profesional{
+            border: 1px solid #4C8DCE;
+        }
+    }
+}
+
+@media screen and (max-width: 1800px) {
+    .secciones.paginas{
+        margin-right: 100px;
+        margin-left: 100px;
+    }    
+}
+
+@media screen and (max-width: 1450px) {
+    .secciones.paginas{
+        margin-right: 100px;
+        margin-left: 100px;
+        div{
+            width: 500px;
+        }
+    }    
+}
+
+@media screen and (max-width:1250px){
+    .secciones.paginas{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width:1050px) {
+    .paginas-estaticas,
+    .paginas-wpp{
+        background-size: cover;
+        background-repeat: no-repeat;
+        .planes{
+            padding-bottom: 30px;
+            .contenedor{
+                margin-right: 15px;
+                margin-left: 15px;
+                padding: 0px 10px 0px 10px;
+            }
+        }
+    }
+}
+
+@media screen and(max-width:800px) {
+    .paginas-estaticas,
+    .paginas-wpp{
+        .planes{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .contenedor{
+                margin-bottom: 30px;
+                width: auto;
+                padding: 0 20px 0 20px;
+            }
+            .contenedor.profesional{
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .imagen{
+        img{
+            width: 500px;
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+    .imagen{
+        img{
+            width: 300px;
+        }
+    }
+
+    .secciones.paginas{
+        margin-right: 50px;
+        margin-left: 50px;
+        div{
+            h5{
+                font-size: 25px;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+    }
+}
