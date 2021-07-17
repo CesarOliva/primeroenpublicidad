@@ -750,6 +750,9 @@ footer .derechos .privacidad a {
   .presentacion .izquierda .especialidades section div p {
     font-size: 18px;
   }
+  .presentacion .derecha img {
+    width: 400ox;
+  }
   .servicios .izquierda .servicios {
     margin-right: 50px;
     margin-left: 50px;
