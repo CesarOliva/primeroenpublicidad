@@ -617,12 +617,61 @@ footer .derechos .privacidad a {
           box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-.proyectos .trabajos .contenedor img {
+.proyectos .trabajos .contenedor .imagen-contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.proyectos .trabajos .contenedor .imagen-contenedor img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
   margin-top: 5px;
   max-width: 280px;
   padding-right: 5px;
   padding-left: 5px;
-  cursor: pointer;
+}
+
+.proyectos .trabajos .contenedor .imagen-contenedor img:hover {
+  opacity: .5;
+}
+
+.proyectos .trabajos .contenedor .imagen-contenedor .hover {
+  text-align: center;
+  position: absolute;
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.proyectos .trabajos .contenedor .imagen-contenedor:hover {
+  background: #68a6ec;
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+}
+
+.proyectos .trabajos .contenedor .imagen-contenedor:hover > .hover {
+  opacity: 1;
+  visibility: visible;
+  font-size: 30px;
+}
+
+.proyectos .trabajos .contenedor .imagen-contenedor:hover > .hover a {
+  color: #fff;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .proyectos .trabajos .contenedor .descripcion {
@@ -648,6 +697,14 @@ footer .derechos .privacidad a {
 .proyectos .trabajos .contenedor.trabajo1 img {
   padding-right: 15px;
   padding-left: 15px;
+}
+
+.proyectos .trabajos .contenedor:hover {
+  background: #68a6ec;
+}
+
+.proyectos .trabajos .contenedor:hover img {
+  opacity: .5;
 }
 
 @media screen and (max-width: 1440px) {
@@ -730,6 +787,12 @@ footer .derechos .privacidad a {
   }
 }
 
+@media screen and (max-width: 740px) {
+  .presentacion .izquierda .especialidades {
+    width: 600px;
+  }
+}
+
 @media screen and (max-width: 700px) {
   .presentacion .izquierda .textos h2,
   .presentacion .izquierda .textos h1 {
@@ -737,21 +800,35 @@ footer .derechos .privacidad a {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .presentacion .izquierda .especialidades {
+    width: 500px;
+    margin: auto;
+  }
+  .presentacion .izquierda .especialidades h3 {
+    margin-top: 30px;
+  }
+}
+
 @media screen and (max-width: 550px) {
   .presentacion .izquierda .textos h2 {
     font-size: 35px;
-    margin-left: 20px;
+    margin-left: 40px;
   }
   .presentacion .izquierda .textos h1 {
     font-size: 35px;
-    margin-left: 20px;
+    margin-left: 40px;
     width: 300px;
+  }
+  .presentacion .izquierda .especialidades section div i {
+    font-size: 40px;
   }
   .presentacion .izquierda .especialidades section div p {
     font-size: 18px;
   }
   .presentacion .derecha img {
-    width: 400ox;
+    width: 400px;
+    margin-right: 0;
   }
   .servicios .izquierda .servicios {
     margin-right: 50px;
@@ -762,6 +839,40 @@ footer .derechos .privacidad a {
   }
   .servicios .derecha .imagenes img {
     width: 400px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .presentacion .izquierda .especialidades {
+    width: 400px;
+  }
+  .presentacion .izquierda .especialidades div {
+    width: 150px;
+  }
+  .presentacion .derecha .imagenes img {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .presentacion .izquierda .especialidades {
+    width: 380px;
+    margin: auto;
+  }
+  .presentacion .izquierda .especialidades h3 {
+    margin-top: 50px;
+  }
+  .presentacion .derecha img {
+    width: 300px;
+  }
+  .servicios .izquierda .servicios .titulo h3 {
+    font-size: 35px;
+  }
+  .servicios .derecha .imagenes img {
+    width: 300px;
+  }
+  .proyectos h3 {
+    font-size: 35px;
   }
 }
 
