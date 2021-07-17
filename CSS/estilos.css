@@ -670,7 +670,11 @@ footer .derechos .privacidad a {
     display: flex;
   }
   .presentacion .izquierda.col-md-6 {
+    margin-top: 50px;
     max-width: 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 60%;
+            flex: 0 0 60%;
   }
   .presentacion .derecha.col-md-6 {
     max-width: 100%;
@@ -715,6 +719,46 @@ footer .derechos .privacidad a {
   }
   .servicios .derecha.col-md-6 {
     max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .presentacion .izquierda.col-md-6 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 80%;
+            flex: 0 0 80%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .presentacion .izquierda .textos h2,
+  .presentacion .izquierda .textos h1 {
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .presentacion .izquierda .textos h2 {
+    font-size: 35px;
+    margin-left: 20px;
+  }
+  .presentacion .izquierda .textos h1 {
+    font-size: 35px;
+    margin-left: 20px;
+    width: 300px;
+  }
+  .presentacion .izquierda .especialidades section div p {
+    font-size: 18px;
+  }
+  .servicios .izquierda .servicios {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+  .servicios .derecha .imagenes {
+    margin: 70px 0 70px 0;
+  }
+  .servicios .derecha .imagenes img {
+    width: 400px;
   }
 }
 
