@@ -11,6 +11,11 @@ body{
 
 header{
     background: #f6f6f6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
     nav{
         display: flex;
         align-items: center;
@@ -34,6 +39,7 @@ header{
                     color: #000;
                     font-family: 'Poppins';
                     font-weight: normal;
+                    text-decoration: none;
                 }
                 a.active{
                     font-weight: 700;
@@ -47,6 +53,11 @@ header{
             }
         }
     }
+}
+
+header.sticky{
+    height: 80px;
+    background: #202020;
 }
 
 .indice{
@@ -253,6 +264,83 @@ footer{
         }
         .ruta{
             margin-right: 50px;
+        }
+    }
+}
+
+@media screen and (max-width:1100px) {
+    header{
+        nav{
+            display: flex;
+            justify-content: flex-end;
+            img{
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:852px) {
+
+    header{
+        nav{
+            ul{
+                display: none;
+                opacity: 0;
+                visibility: visible;
+                li{
+                    a{
+                        font-size: 1.3em;
+                        padding: 5px 12px;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        
+        nav.active ul{
+            position: fixed;
+            top: 80px;
+            left: 0;
+            width: 100%;
+            height: calc(100% - 80px);
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            opacity: 1;
+            visibility: visible;
+        }
+
+    }
+
+    header.sticky .toggle{
+        position: fixed;
+        top: 15px;
+        right: 40px;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        background: #fff url(../Imagenes/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    header.sticky .toggle.active{
+        background: #fff url(../Imagenes/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    header.sticky{
+        nav{
+            ul{
+                opacity: 1;
+                visibility: visible;
+            }
         }
     }
 }

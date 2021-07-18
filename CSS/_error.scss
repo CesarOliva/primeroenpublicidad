@@ -69,3 +69,32 @@ section.error{
         background: #D7D5D1;
     }
 }
+
+@media screen and (max-width:900px) {
+    div.error{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    div.error{
+        width: 80%;
+        height: 70px;
+        font-size: 40px;
+
+    }
+
+    section.error{
+        margin-right: 10px;
+        margin-left: 10px;
+        p.url{
+            font-size: 30px;
+        }
+
+        span{
+            p{
+                font-size: 20px;
+            }
+        }
+    }
+}
