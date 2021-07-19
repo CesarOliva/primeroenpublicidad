@@ -1,3 +1,7 @@
+html{
+    overflow-x: hidden;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -62,10 +66,12 @@ header.sticky{
 
 .indice{
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
     background: #E8F2F6;
     height: 80px;
+    padding-bottom: 15px;
+
     p{
         font-family: 'Poppins';
         font-size: 20px;
@@ -282,6 +288,27 @@ footer{
 
 @media screen and (max-width:852px) {
 
+    .estatico{
+        height: 80px;
+        background: #202020;
+        .up{
+        background: #202020;
+        height: 15px;
+
+        }
+        .icono{
+            position: inherit;
+            margin-left: calc(100% - 90px);
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            background: #fff url(../Imagenes/menu.png);
+            background-size: 30px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+
     header{
         nav{
             ul{
@@ -303,7 +330,7 @@ footer{
             top: 80px;
             left: 0;
             width: 100%;
-            height: calc(100% - 80px);
+            height: 100%;
             background: #000;
             display: flex;
             justify-content: center;

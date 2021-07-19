@@ -261,3 +261,14 @@
         }
     }
 }
+
+@media screen and (max-width:400px) {
+    .secciones.paginas{
+        margin-right: 25px;
+        margin-left: 25px;
+        div{
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+}

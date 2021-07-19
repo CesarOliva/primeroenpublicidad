@@ -1,3 +1,7 @@
+html {
+  overflow-x: hidden;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -76,14 +80,15 @@ header.sticky {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   background: #E8F2F6;
   height: 80px;
+  padding-bottom: 15px;
 }
 
 .indice p {
@@ -311,6 +316,25 @@ footer .derechos .privacidad a {
 }
 
 @media screen and (max-width: 852px) {
+  .estatico {
+    height: 80px;
+    background: #202020;
+  }
+  .estatico .up {
+    background: #202020;
+    height: 15px;
+  }
+  .estatico .icono {
+    position: inherit;
+    margin-left: calc(100% - 90px);
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background: #fff url(../Imagenes/menu.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
   header nav ul {
     display: none;
     opacity: 0;
@@ -326,7 +350,7 @@ footer .derechos .privacidad a {
     top: 80px;
     left: 0;
     width: 100%;
-    height: calc(100% - 80px);
+    height: 100%;
     background: #000;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -821,7 +845,7 @@ footer .derechos .privacidad a {
             flex: 0 0 60%;
   }
   .presentacion .izquierda.col-md-6 h2 {
-    margin-top: 50px;
+    margin-top: 100px;
   }
   .presentacion .derecha.col-md-6 {
     max-width: 100%;
@@ -874,6 +898,15 @@ footer .derechos .privacidad a {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 80%;
             flex: 0 0 80%;
+  }
+}
+
+@media screen and (max-width: 882px) {
+  .presentacion .izquierda.col-md-6 {
+    margin-top: 0;
+  }
+  .presentacion .izquierda.col-md-6 h2 {
+    margin-top: 30px;
   }
 }
 
@@ -1370,6 +1403,17 @@ footer .derechos .privacidad a {
   }
   .secciones.paginas div p {
     font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .secciones.paginas {
+    margin-right: 25px;
+    margin-left: 25px;
+  }
+  .secciones.paginas div {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 

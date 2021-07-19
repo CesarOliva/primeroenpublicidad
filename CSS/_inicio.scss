@@ -274,7 +274,7 @@
             max-width: 100%;
             flex: 0 0 60%;
             h2{
-                margin-top: 50px;
+                margin-top: 100px;
             }
         }
         .derecha.col-md-6{
@@ -320,6 +320,17 @@
     .presentacion{
         .izquierda.col-md-6{
             flex: 0 0 80%;
+        }
+    }
+}
+
+@media screen and(max-width:882px){
+    .presentacion{
+        .izquierda.col-md-6{
+            margin-top: 0;
+            h2{
+                margin-top: 30px;
+            }
         }
     }
 }
