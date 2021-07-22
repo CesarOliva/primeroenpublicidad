@@ -159,17 +159,17 @@
             box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 
             .imagen-contenedor{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                position: unset;
-                overflow: hidden;
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
+                // position: unset;
+                // overflow: hidden;
                 cursor: pointer;
 
                 img{
                     width: 100%;
                     height: 100%;
-                    transition: all 500ms ease-out;
+                    // transition: all 500ms ease-out;
                     margin-top: 5px;
                     max-width: 280px;
                     padding-right: 5px;
@@ -177,36 +177,36 @@
                 }
 
                 img:hover{
-                    opacity: .5;
+                    opacity: 1;
                 }
 
-                .hover{
-                    text-align: center;
-                    position: absolute;
-                    transition: all 500ms ease-out;
-                    opacity: 0;
-                    visibility: hidden;
-                    a{
-                        color: #fff;
-                    }
-                }
+                // .hover{
+                //     text-align: center;
+                //     position: absolute;
+                //     transition: all 500ms ease-out;
+                //     opacity: 0;
+                //     visibility: hidden;
+                //     a{
+                //         color: #fff;
+                //     }
+                // }
             }
 
             .imagen-contenedor:hover{
                 background: #68a6ec;
-                transition: all 500ms ease-out;
+                // transition: all 500ms ease-out;
             }
 
-            .imagen-contenedor:hover > .hover{
-                opacity: 1;
-                visibility: visible;
-                font-size: 30px;
-                a{
-                color: #fff;
-                margin-right: 10px;
-                margin-left: 10px;
-                }    
-            }
+            // .imagen-contenedor:hover > .hover{
+            //     opacity: 1;
+            //     visibility: visible;
+            //     font-size: 30px;
+            //     a{
+            //     color: #fff;
+            //     margin-right: 10px;
+            //     margin-left: 10px;
+            //     }    
+            // }
 
             .descripcion{
                 background: #fff;
@@ -237,7 +237,7 @@
         .contenedor:hover{
             background: #68a6ec;
             img{
-                opacity: .5;
+                opacity: 1;
             }
         }
     }
@@ -255,6 +255,7 @@
         display: none;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
         .contenedor-img{
             position: relative;
         }
@@ -268,6 +269,25 @@
             right: -20px;
             top: -20px;
         }
+        
+        // .link{
+        //     .button{
+        //         margin-top: 50px;
+        //         display: flex;
+        //         justify-content: center;
+        //         align-items: center;
+        //         width: 150px;
+        //         height: 50px;
+        //         background: #68a6ec;
+        //         text-align: center;
+        //         border-radius: 5px;
+        //         a{
+        //             color: #fff;
+        //             font-size: 18px;
+        //             font-family: 'Open Sans';
+        //         }
+        //     }
+        // }
     } 
 
     .overlay.active{

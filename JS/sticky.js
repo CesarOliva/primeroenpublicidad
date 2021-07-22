@@ -1,12 +1,12 @@
 $(document).ready(function(){
     
     // sticky
-    
+    var comprobar = 'si' 
     var windowWidth = $(window).width();
     if(windowWidth < 852){
         window.addEventListener("scroll", function(){
             const header = this.document.querySelector('header');
-            header.classList.toggle('sticky', window.scrollY >= 0);
+            header.classList.toggle('sticky', window.scrollY >=0);
         })
         
         const navigation = document.querySelector('nav')

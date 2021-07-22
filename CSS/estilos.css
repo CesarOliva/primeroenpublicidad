@@ -725,25 +725,12 @@ footer .derechos .privacidad a {
 }
 
 .proyectos .trabajos .contenedor .imagen-contenedor {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: unset;
-  overflow: hidden;
   cursor: pointer;
 }
 
 .proyectos .trabajos .contenedor .imagen-contenedor img {
   width: 100%;
   height: 100%;
-  -webkit-transition: all 500ms ease-out;
-  transition: all 500ms ease-out;
   margin-top: 5px;
   max-width: 280px;
   padding-right: 5px;
@@ -751,38 +738,11 @@ footer .derechos .privacidad a {
 }
 
 .proyectos .trabajos .contenedor .imagen-contenedor img:hover {
-  opacity: .5;
-}
-
-.proyectos .trabajos .contenedor .imagen-contenedor .hover {
-  text-align: center;
-  position: absolute;
-  -webkit-transition: all 500ms ease-out;
-  transition: all 500ms ease-out;
-  opacity: 0;
-  visibility: hidden;
-}
-
-.proyectos .trabajos .contenedor .imagen-contenedor .hover a {
-  color: #fff;
+  opacity: 1;
 }
 
 .proyectos .trabajos .contenedor .imagen-contenedor:hover {
   background: #68a6ec;
-  -webkit-transition: all 500ms ease-out;
-  transition: all 500ms ease-out;
-}
-
-.proyectos .trabajos .contenedor .imagen-contenedor:hover > .hover {
-  opacity: 1;
-  visibility: visible;
-  font-size: 30px;
-}
-
-.proyectos .trabajos .contenedor .imagen-contenedor:hover > .hover a {
-  color: #fff;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .proyectos .trabajos .contenedor .descripcion {
@@ -815,7 +775,7 @@ footer .derechos .privacidad a {
 }
 
 .proyectos .trabajos .contenedor:hover img {
-  opacity: .5;
+  opacity: 1;
 }
 
 .proyectos .overlay {
@@ -834,6 +794,10 @@ footer .derechos .privacidad a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .proyectos .overlay .contenedor-img {
