@@ -1,6 +1,6 @@
 # Primero En Publicidad
 
-Pagina web hecha para la empresa primero en publicidad. (07/2021)
+Pagina web hecha para la empresa primero en publicidad por<a href="https://cesaroliva.github.io/portafolio/">César Oliva</a>. (07/2021)
 
 # Descripcion
 
